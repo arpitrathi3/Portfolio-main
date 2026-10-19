@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Arpit Rathi — Software Engineer Portfolio</title>
+  <meta name="title" content="Arpit Rathi — Software Engineer Portfolio">
+  <meta name="description" content="Personal portfolio of Arpit Rathi, a Software Engineer passionate about technology, software development, problem-solving, and building useful digital products.">
+  <meta name="author" content="Arpit Rathi">
+  <meta name="theme-color" content="#07130F">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307130F'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='48' fill='%23A3E635'>AR</text></svg>">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Mesh Background -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Interactive Constellation Particles Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Personal Logo -->
+      <a href="#home" class="brand-logo" aria-label="Arpit Rathi Home">
+        <div class="logo-badge">AR</div>
+        <span class="logo-text">Arpit Rathi</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact Me</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav-connect">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          Let's Connect
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">
+        <span>Home</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#about" class="mobile-nav-link">
+        <span>About</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#skills" class="mobile-nav-link">
+        <span>Skills</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#certifications" class="mobile-nav-link">
+        <span>Certifications</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#projects" class="mobile-nav-link">
+        <span>Projects</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+      <a href="#contact" class="mobile-nav-link">
+        <span>Contact Me</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">
+        Let's Connect
+      </a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column: Info & CTAs -->
+          <div class="hero-content reveal-on-scroll">
+            
+            <!-- Availability Badge (Editable) -->
+            <div class="availability-badge" title="Status: Open to Opportunities">
+              <span class="pulse-indicator">
+                <span class="pulse-ring"></span>
+                <span class="pulse-dot"></span>
+              </span>
+              <span>Software Engineer | Open to Opportunities</span>
+            </div>
+
+            <div class="hero-title-greeting">Hello, world!</div>
+            
+            <h1 class="hero-title-name">
+              Hi, I'm <span class="gradient-text">Arpit Rathi.</span>
+            </h1>
+
+            <h2 class="hero-headline">
+              Software Engineer Building <span class="highlight">Digital Experiences.</span>
+            </h2>
+
+            <p class="hero-description">
+              Passionate about software development, problem-solving, technology, and building useful digital products. Dedicated to continuous learning, strong programming fundamentals, and turning creative ideas into practical code.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="hero-cta-primary">
+                <span>Explore My Work</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary" id="hero-cta-secondary">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links (Configurable Profile URLs) -->
+            <div class="hero-socials">
+              <!-- CONFIGURABLE GITHUB URL -->
+              <a href="https://github.com/arpitrathi3" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile (Configurable)">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <!-- CONFIGURABLE LINKEDIN URL -->
+              <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile (Configurable)">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Hero Right Column: Dedicated Blank Photo Placeholder (CRITICAL SPECIFICATION) -->
+          <!--
+            ========================================================================
+            NOTE TO ARPIT RATHI:
+            This slot is intentionally blank per specification — no generated faces,
+            avatars, or stock photos.
+            - To test your picture live in browser: click or drop your image into this box.
+            - To set it permanently in code: change src="" on #user-custom-photo to
+              your actual photo file (e.g. src="images/arpit-rathi.jpg").
+            ========================================================================
+          -->
+          <div class="hero-photo-container reveal-on-scroll delay-1">
+            <div class="hero-photo-wrapper">
+              
+              <!-- Subtle Green Glowing Backdrop -->
+              <div class="photo-glow-backdrop" aria-hidden="true"></div>
+
+              <!-- 4:5 Portrait Ratio Container -->
+              <div class="photo-frame" id="photo-frame" title="Click or drag & drop to preview your personal photo">
+                
+                <!-- Corner Geometric Accents -->
+                <div class="photo-corner corner-tl" aria-hidden="true"></div>
+                <div class="photo-corner corner-tr" aria-hidden="true"></div>
+                <div class="photo-corner corner-bl" aria-hidden="true"></div>
+                <div class="photo-corner corner-br" aria-hidden="true"></div>
+
+                <!-- Live User Photo Slot (Hidden by default, blank placeholder active) -->
+                <img id="user-custom-photo" class="user-custom-photo" alt="Arpit Rathi - Software Engineer Profile Photo" />
+
+                <!-- Reset Control if user previews a photo -->
+                <div class="photo-preview-controls" id="photo-preview-controls">
+                  <button type="button" class="btn-preview-reset" id="btn-reset-photo">Reset to Placeholder</button>
+                </div>
+
+                <!-- Minimal Elegant Blank Placeholder Content -->
+                <div class="photo-placeholder-content" id="photo-placeholder-content" style="display: flex; flex-direction: column; align-items: center;">
+                  
+                  <div class="placeholder-icon-wrap" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+
+                  <h3 class="placeholder-main-label">Your Photo Here</h3>
+                  
+                  <div class="placeholder-ratio-tag">4:5 PORTRAIT RATIO</div>
+                  
+                  <p class="placeholder-desc">
+                    Reserved slot for Arpit Rathi's personal photograph. Perfectly balanced 380px frame.
+                  </p>
+
+                  <div class="placeholder-action-hint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span>Click or drag & drop to preview</span>
+                  </div>
+
+                </div>
+
+                <!-- Hidden file input for browser testing -->
+                <input type="file" id="photo-upload-input" accept="image/*" style="display: none;" aria-label="Upload photo preview">
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Background & Passion</div>
+          <h2 class="section-title">A Little About Me</h2>
+          <p class="section-subtitle">
+            A software engineer focused on continuous learning, programming fundamentals, and building reliable digital solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Story (Exact Provided Content) -->
+          <div class="about-narrative reveal-on-scroll">
+            <p class="about-paragraph">
+              I'm <strong>Arpit Rathi</strong>, a software engineer passionate about technology, software development, and solving real-world problems through code. I enjoy exploring new tools, strengthening my programming fundamentals, and turning ideas into practical digital experiences.
+            </p>
+            <p class="about-paragraph">
+              I believe that <strong>continuous learning, consistency, and curiosity</strong> are essential for growth in technology. I'm interested in building reliable, user-friendly applications while improving my understanding of software engineering, modern development practices, and emerging technologies.
+            </p>
+            <p class="about-paragraph">
+              Beyond coding, I value <strong>creativity, logical thinking, collaboration, and personal growth</strong>. I enjoy exploring new technologies, learning from technical communities, experimenting with new ideas, and developing skills that help me become a better engineer.
+            </p>
+            <p class="about-paragraph">
+              My goal is to keep learning, contribute to meaningful projects, and create digital solutions that combine functionality, performance, and thoughtful design.
+            </p>
+          </div>
+
+          <!-- Highlight Cards Column -->
+          <div class="about-highlights">
+            
+            <!-- Card 1: Continuous Learning -->
+            <div class="highlight-card reveal-on-scroll delay-1">
+              <div class="highlight-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h4>Continuous Learning</h4>
+                <p>Curious, consistent, and proactive about exploring modern technologies and strengthening engineering foundations.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Problem Solving -->
+            <div class="highlight-card reveal-on-scroll delay-2">
+              <div class="highlight-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h4>Problem Solving</h4>
+                <p>Applying structured analytical thinking, algorithmic logic, and clean code principles to solve real-world challenges.</p>
+              </div>
+            </div>
+
+            <!-- Card 3: Building & Creating -->
+            <div class="highlight-card reveal-on-scroll delay-3">
+              <div class="highlight-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="highlight-content">
+                <h4>Building & Creating</h4>
+                <p>Turning abstract concepts into reliable, responsive, and thoughtfully designed digital products that users love.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Technical Competencies</div>
+          <h2 class="section-title">Skills & Knowledge</h2>
+          <p class="section-subtitle">
+            A structured look at programming languages, developer tools, and computer science fundamentals.
+          </p>
+        </div>
+
+        <!-- Clarification Banner -->
+        <div class="skills-note-banner reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span><strong>Customizable skill items:</strong> Suggested technologies and fundamental topics configured for easy updating to match your exact toolset.</span>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-nav reveal-on-scroll">
+          <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="languages">Languages</button>
+          <button class="skill-filter-btn" data-filter="web">Web Tech</button>
+          <button class="skill-filter-btn" data-filter="tools">Tools & Workflow</button>
+          <button class="skill-filter-btn" data-filter="cs">Core CS</button>
+          <button class="skill-filter-btn" data-filter="emerging">Emerging Tech</button>
+        </div>
+
+        <!-- Skills Grid Categorized Cards -->
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card reveal-on-scroll delay-1" data-category="languages">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Python</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>C</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-tag placeholder-tag" title="Editable placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+                <span>+ Add Language</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card reveal-on-scroll delay-2" data-category="web">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Modern JavaScript</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Responsive Design</span>
+              </div>
+              <div class="skill-tag placeholder-tag" title="Editable placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg>
+                <span>+ Add Web Tool</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools -->
+          <div class="skill-category-card reveal-on-scroll delay-3" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Developer Tools</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Git</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Command Line / Shell</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Core Computer Science -->
+          <div class="skill-category-card reveal-on-scroll delay-1" data-category="cs">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Core Computer Science</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Data Structures</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Algorithms</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Software Fundamentals</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Problem Solving Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Emerging Technologies -->
+          <div class="skill-category-card reveal-on-scroll delay-2" data-category="emerging">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Emerging Technologies</h3>
+            </div>
+            <div class="skill-tags-wrap">
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>AI Concepts</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Clinical AI Applications</span>
+              </div>
+              <div class="skill-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                <span>Modern Web Architecture</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Credentials</div>
+          <h2 class="section-title">Certifications & Learning</h2>
+          <p class="section-subtitle">
+            Formal learning credentials and specialized training programs.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- FEATURED CERTIFICATION: AI for Clinicians (Requested) -->
+          <div class="cert-card-featured reveal-on-scroll">
+            <div>
+              <div class="cert-top-meta">
+                <span class="cert-badge-type">Specialized Credential</span>
+                <span class="cert-status-badge">
+                  <span class="cert-status-dot"></span>
+                  Completed
+                </span>
+              </div>
+
+              <!-- AI & Clinical Icon -->
+              <div class="cert-icon-large" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Heartbeat pulse combined with neural node -->
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+
+              <h3 class="cert-title">AI for Clinicians</h3>
+              
+              <p class="cert-description">
+                A learning credential focused on understanding artificial intelligence concepts and their applications in clinical and healthcare settings.
+              </p>
+            </div>
+
+            <div class="cert-actions">
+              <!-- No certificate URL provided yet; neutral status shown per requirements -->
+              <span class="cert-status-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Certificate Link Coming Soon
+              </span>
+
+              <!-- Editable Certificate URL Button -->
+              <!-- REPLACE '#' WITH YOUR CREDENTIAL LINK ONCE AVAILABLE -->
+              <a href="#" class="btn btn-secondary btn-sm" style="opacity: 0.7; pointer-events: none;" title="Add URL to activate">
+                <span>View Certificate</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Extensible Future Certification Placeholder -->
+          <div class="cert-card-placeholder reveal-on-scroll delay-1">
+            <div class="cert-add-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+            <h4 class="cert-placeholder-title">+ Add Next Certification</h4>
+            <p class="cert-placeholder-desc">
+              Easily expand this section as you complete future courses, cloud certificates, or technical accreditations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION (Editable Placeholders)
+         ========================================================================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Projects & Applications</h2>
+          <p class="section-subtitle">
+            A showcase of software engineering projects, experiments, and digital tools. Editable templates ready for your custom repositories.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT PLACEHOLDER 1 -->
+          <div class="project-card reveal-on-scroll delay-1">
+            <div class="project-thumbnail">
+              <div class="project-thumb-pattern"></div>
+              <div class="project-thumb-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="project-thumb-badge">Editable Project Template 1</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-type-tag">Web Application</span>
+              </div>
+              
+              <h3 class="project-title">[Project Title 1 - Placeholder]</h3>
+              
+              <p class="project-desc">
+                A modern software application built with clean architecture, responsive design, and intuitive UX. Replace this description with your actual project details, architecture highlights, and outcomes.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="project-tech-pill">Python</span>
+                <span class="project-tech-pill">JavaScript</span>
+                <span class="project-tech-pill">REST API</span>
+                <span class="project-tech-pill">CSS3</span>
+              </div>
+
+              <div class="project-links">
+                <!-- Replace with real GitHub repository URL -->
+                <a href="https://github.com/arpitrathi3/project-1" target="_blank" rel="noopener noreferrer" class="project-link-item" title="Configure GitHub Repo URL">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository</span>
+                </a>
+
+                <!-- Replace with real Live Demo URL -->
+                <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer" class="project-link-item" title="Configure Live Demo URL">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT PLACEHOLDER 2 -->
+          <div class="project-card reveal-on-scroll delay-2">
+            <div class="project-thumbnail">
+              <div class="project-thumb-pattern"></div>
+              <div class="project-thumb-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <span class="project-thumb-badge">Editable Project Template 2</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-type-tag">Algorithms & Systems</span>
+              </div>
+              
+              <h3 class="project-title">[Project Title 2 - Placeholder]</h3>
+              
+              <p class="project-desc">
+                An efficient computational tool developed to solve practical problems with optimal time complexity, modular code organization, and rigorous testing.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="project-tech-pill">C</span>
+                <span class="project-tech-pill">Data Structures</span>
+                <span class="project-tech-pill">Algorithms</span>
+                <span class="project-tech-pill">Git</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/arpitrathi3/project-2" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository</span>
+                </a>
+
+                <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT PLACEHOLDER 3 -->
+          <div class="project-card reveal-on-scroll delay-3">
+            <div class="project-thumbnail">
+              <div class="project-thumb-pattern"></div>
+              <div class="project-thumb-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+              </div>
+              <span class="project-thumb-badge">Editable Project Template 3</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-type-tag">Interactive UI & Frontend</span>
+              </div>
+              
+              <h3 class="project-title">[Project Title 3 - Placeholder]</h3>
+              
+              <p class="project-desc">
+                An interactive web interface emphasizing modern visual design, fluid animations, accessibility standards, and responsive user feedback mechanisms.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="project-tech-pill">JavaScript</span>
+                <span class="project-tech-pill">HTML5 Canvas</span>
+                <span class="project-tech-pill">Modern CSS</span>
+                <span class="project-tech-pill">UI/UX</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/arpitrathi3/project-3" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repository</span>
+                </a>
+
+                <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT ME SECTION
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Let's Build Something Great Together.</h2>
+          <p class="section-subtitle">
+            Whether you want to collaborate on a project, discuss software engineering opportunities, or simply say hello, my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Card -->
+          <div class="contact-info-card reveal-on-scroll">
+            <div>
+              <p class="contact-lead-text">
+                I'm actively interested in technology discussions, learning opportunities, software development roles, and impactful engineering projects.
+              </p>
+
+              <div class="contact-methods">
+                
+                <!-- Direct Email Item with Copy & Mailto -->
+                <div class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  
+                  <div class="contact-item-detail">
+                    <span class="contact-label">Email Address</span>
+                    <!-- Real mailto link -->
+                    <a href="mailto:rathiarpit877@gmail.com" class="contact-value" id="email-mailto-link">
+                      rathiarpit877@gmail.com
+                    </a>
+                  </div>
+
+                  <!-- Working Copy Button -->
+                  <button type="button" class="btn-copy-email" id="btn-copy-email" title="Copy email to clipboard">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <!-- Professional Title -->
+                <div class="contact-item">
+                  <div class="contact-item-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-item-detail">
+                    <span class="contact-label">Role</span>
+                    <span class="contact-value">Software Engineer</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Social Links in Contact -->
+            <div class="contact-social-wrap">
+              <h5>Connect Across Platforms</h5>
+              <div class="contact-social-links">
+                <!-- Configurable GitHub Profile -->
+                <a href="https://github.com/arpitrathi3" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+
+                <!-- Configurable LinkedIn Profile -->
+                <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="btn-icon" title="LinkedIn Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+
+                <!-- Direct Mail Shortcut -->
+                <a href="mailto:rathiarpit877@gmail.com" class="btn-icon" title="Send Direct Email">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card reveal-on-scroll delay-1">
+            <div class="form-header">
+              <h3>Send a Message</h3>
+              <p>Fill out the form below to initiate an email directly to Arpit.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="form-name" class="form-label">
+                  Your Name <span>*required</span>
+                </label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name">
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="form-email" class="form-label">
+                  Your Email <span>*required</span>
+                </label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email">
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="form-subject" class="form-label">
+                  Subject <span>optional</span>
+                </label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Collaboration Opportunity / General Inquiry">
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">
+                  Message <span>*required</span>
+                </label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Hello Arpit, I would love to connect with you regarding..." required></textarea>
+              </div>
+
+              <!-- Status Feedback Banner (No misleading fake success) -->
+              <div id="form-status" class="form-status-message" role="status" aria-live="polite"></div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" id="btn-submit-message" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 8px;">
+                Direct dispatch: opens your email client addressed to rathiarpit877@gmail.com with your details prepared.
+              </p>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-title">Arpit Rathi</div>
+          <p class="footer-brand-desc">Software Engineer Building Digital Experiences</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <a href="#home" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#certifications" class="footer-nav-link">Certifications</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+
+        <div class="footer-socials">
+          <a href="https://github.com/arpitrathi3" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:rathiarpit877@gmail.com" class="btn-icon" aria-label="Send Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Designed &amp; Built by <strong>Arpit Rathi</strong> &bull; &copy; <span id="current-year"></span> All rights reserved.
+        </div>
+        <div>
+          Aesthetic Green &bull; Minimalist &bull; High Performance
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top of Page" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive Feedback Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
