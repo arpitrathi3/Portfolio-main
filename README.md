@@ -1,4 +1,4 @@
-# Arpit Rathi — Premium Personal Portfolio Website
+# Arpit Rathi — Personal Portfolio Website
 
 A modern, responsive, and interactive personal portfolio website for **Arpit Rathi**, Software Engineer.
 Built with clean semantic HTML5, modern Vanilla CSS with a customized dark green & electric lime design system, and lightweight modular JavaScript.
