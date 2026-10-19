@@ -77,8 +77,10 @@ In [`index.html`](file:///y:/Main/Portfolio/index.html), locate the `#photo-fram
   ```
 - Remove or hide the `#photo-placeholder-content` container.
 
-### 2. Updating Social Profile URLs
-Search for `https://github.com/your-username` and `https://linkedin.com/in/your-username` in `index.html` and replace them with your actual profiles.
+### 2. Social Profiles Configured
+- **GitHub**: [https://github.com/arpitrathi3](https://github.com/arpitrathi3)
+- **LinkedIn**: [https://www.linkedin.com/in/arpit-kumar-22517642a/](https://www.linkedin.com/in/arpit-kumar-22517642a/)
+- **Email**: `rathiarpit877@gmail.com`
 
 ### 3. Adding Your Certificate Link
 Locate the "AI for Clinicians" card in `index.html` and replace `href="#"` with your credential URL, changing the status badge from "Certificate Link Coming Soon" to "Verified Credential".
